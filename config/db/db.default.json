@@ -1,0 +1,20 @@
+{
+	"local": {
+
+	},
+	"test": {
+		"host": "127.0.0.1",
+		"user": "user",
+		"password": "password",
+		"database": "dbname"
+	},
+	"development": {
+		"host": "127.0.0.1",
+		"user": "user",
+		"password": "password",
+		"database": "dbname"
+	},
+	"product": {
+		
+	}
+}

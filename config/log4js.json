@@ -1,0 +1,25 @@
+{
+	"appenders": [{
+		"type": "console"
+	}, {
+		"type": "file",
+		"filename": "logs/app.log",
+		"backups": 3,
+		"category": "app"
+	}, {
+		"type": "file",
+		"filename": "logs/db.log",
+		"backups": 3,
+		"category": "db"
+	}, {
+		"type": "file",
+		"filename": "logs/err.log",
+		"backups": 3,
+		"category": "err"
+	}],
+	"levels": {
+		"app": "INFO",
+		"db": "INFO",
+		"err": "ERROR"
+	}
+}

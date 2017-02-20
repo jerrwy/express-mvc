@@ -1,0 +1,32 @@
+{
+	"local": {
+		"host":"127.0.0.1",
+        "port": 6379,
+        "max": 20,
+        "min": 0,
+        "db": 0,
+        "log": false,
+        "password": ""
+	},
+	"test": {
+		"host":"127.0.0.1",
+        "port": 6879,
+        "max": 20,
+        "min": 0,
+        "db": 2,
+        "log": false,
+        "password": ""
+	},
+	"development": {
+        "host":"127.0.0.1",
+        "port": 6879,
+        "max": 20,
+        "min": 0,
+        "db": 3,
+        "log": false,
+        "password": ""
+	},
+	"product": {
+		
+	}
+}
