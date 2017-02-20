@@ -1,0 +1,30 @@
+cache:
+  key: "$CI_BUILD_REF_NAME"
+  paths:
+    - node_modules/
+
+stages:
+  - install
+  - test
+  - deploy
+
+install:
+  stage: install
+  tags:
+    - node7_docker_18_81
+  script:
+    - npm install --set-registry=https://registry.npm.taobao.org
+
+test:
+  stage: test
+  tags:
+    - node7_docker_18_81
+  script:
+    - npm run test -s
+
+deploy:
+  stage: deploy
+  tags:
+    - docker_in_docker
+  script:
+    - sh build.sh
